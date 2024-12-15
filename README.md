@@ -1,1 +1,2 @@
 # Messaging_app
+A real-time Messaging Application with support for text, images, and emoji sharing between users. The app features a dual chat interface where both the sender and receiver can exchange messages, images, and emojis in real-time. Messages are instantly displayed in parallel chat boxes, simulating a two-way conversation. The design is responsive, optimized for both mobile and desktop users. The app is built with HTML, CSS, and JavaScript, providing seamless user interaction and media sharing.
