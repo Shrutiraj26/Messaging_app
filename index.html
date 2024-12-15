@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messaging App with Emojis</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div class="chat-container">
+            <!-- Sender's Chat Box -->
+            <div class="chat-box sender">
+                <h3>Sender</h3>
+                <div class="chat-window" id="sender-window"></div>
+                <div class="controls">
+                    <textarea id="sender-input" placeholder="Type a message..."></textarea>
+                    <button id="sender-emoji-btn" class="emoji-btn">😊</button>
+                    <button id="sender-send-btn" class="send-btn">Send</button>
+                </div>
+            </div>
+            <!-- Receiver's Chat Box -->
+            <div class="chat-box receiver">
+                <h3>Receiver</h3>
+                <div class="chat-window" id="receiver-window"></div>
+                <div class="controls">
+                    <textarea id="receiver-input" placeholder="Type a message..."></textarea>
+                    <button id="receiver-emoji-btn" class="emoji-btn">😊</button>
+                    <button id="receiver-send-btn" class="send-btn">Send</button>
+                </div>
+            </div>
+        </div>
+        <!-- Emoji Picker -->
+        <div id="emoji-picker" hidden>
+            <span class="emoji">😊</span>
+            <span class="emoji">😂</span>
+            <span class="emoji">😍</span>
+            <span class="emoji">😭</span>
+            <span class="emoji">👍</span>
+            <span class="emoji">❤️</span>
+        </div>
+        <div id="emoji-overlay" hidden></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.6.1/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
